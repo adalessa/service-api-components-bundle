@@ -35,11 +35,5 @@
     },
     "autoload": {
         "psr-4": { "Auto1\\ServiceAPIComponentsBundle\\": "" }
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:adalessa/service-api-handler-bundle.git"
-        }
-    ]
+    }
 }

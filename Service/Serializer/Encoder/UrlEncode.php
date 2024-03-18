@@ -11,7 +11,7 @@ class UrlEncode implements EncoderInterface
      *
      * {@inheritdoc}
      */
-    public function encode($data, $format, array $context = [])
+    public function encode($data, $format, array $context = []): string
     {
         $data = $this->convertCamelCaseToSnakeCase($data);
         $encoded = http_build_query($data);
@@ -22,7 +22,7 @@ class UrlEncode implements EncoderInterface
     /**
      * {@inheritdoc}
      */
-    public function supportsEncoding($format)
+    public function supportsEncoding($format): bool
     {
         return UrlEncoder::FORMAT === $format;
     }
@@ -34,7 +34,7 @@ class UrlEncode implements EncoderInterface
      *
      * @return array under_score array
      */
-    private function convertCamelCaseToSnakeCase($array)
+    private function convertCamelCaseToSnakeCase($array): array
     {
         $underscoreArray = [];
 

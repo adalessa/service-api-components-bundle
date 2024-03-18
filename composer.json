@@ -28,8 +28,8 @@
         "auto1-oss/service-api-request": "^1.0"
     },
     "require-dev": {
-        "symfony/console": "~3.0|~4.0|~5.0",
-        "phpunit/phpunit": "^5.7",
+        "symfony/console": "~3.0|~4.0|~5.0|~6.0",
+        "phpunit/phpunit": "^9.0",
         "symfony/phpunit-bridge": "^3.3.8",
         "phpspec/prophecy": "^1.7.2"
     },
